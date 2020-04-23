@@ -53,7 +53,7 @@ This setup will create an internal connection as depicted:
 
 
 
-<img src="images/Dimming.png" alt="Internal Depiction" width="8600"/>
+<img src="images/Dimming.png" alt="Internal Depiction" width="860"/>
 
 ## Operation
 Run the code written in Bare metal, the following signals are to be seen on the oscilloscope:
