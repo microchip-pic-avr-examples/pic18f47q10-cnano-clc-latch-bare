@@ -1,7 +1,9 @@
 <div id="readme" class="Box-body readme blob js-code-block-container">
- <article class="markdown-body entry-content p-3 p-md-6" itemprop="This needs to locked down and 'never' changed"><p><a href="https://www.microchip.com" rel="nofollow"><img src="images/Microchip.png" alt="MCHP" style="max-width:40%;"></a></p>
- 
+ <article class="markdown-body entry-content p-3 p-md-6" itemprop="This needs to locked down and 'never' changed"><p><a href="https://www.microchip.com" rel="nofollow"><img src="images/Microchip.png" alt="MCHP" width="300";"></a></p>
+
+
 # PIC18F47Q10: Getting started with the CLC on PIC18 -> Using the CLC to Create an LED Dimming Effect -> Bare metal code
+
 
 ## Objective:
 The PIC18F47Q10 features 8 Configurable Logic Cell (CLC) peripherals that cen be used to implemenmt various logic functions.
@@ -21,7 +23,8 @@ Existing application notes or tech briefs that are related to the subject:
 - [20007 CIP1 - Applying Configurable Logic Cell CLC to Interconnect Peripheral Functions](https://www.youtube.com/watch?v=qT2Ma_XR3ZQ)
 
 - [PIC18F-Q10 Family Product Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic18f-q10-product-family)
-
+- [PIC18F47Q10 Data Sheet](http://ww1.microchip.com/downloads/en/DeviceDoc/40002043D.pdf)
+- [PIC18F47Q10 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=pic18f47q10-cnano&type=&language=)
 
 ## Software Used
 - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
@@ -44,16 +47,14 @@ The following configurations must be made for this project:
 
 I/O configurations:
 
-|:PIN-------:|:Configuration---:|
-
-|:RA2-------:|:Digital Output--:|
+|Pin           | Configuration      |
+| :----------: | :----------------: |
+|RA2           | Digital Output     |
 
 
 This setup will create an internal connection as depicted:
 
-
-
-<img src="images/Dimming.png" alt="Internal Depiction" width="860"/>
+<br><img src="images/Dimming.png" alt="Internal Depiction" width="720"/>
 
 ## Operation
 Run the code written in Bare metal, the following signals are to be seen on the oscilloscope:
@@ -61,11 +62,10 @@ Run the code written in Bare metal, the following signals are to be seen on the 
 In the figure below  it is depicted the CLC1 output implementing the fixed frequency with variable duty-cycle function:
 - Signal 2 (Green) is CLC1 output
 
-
-<img src="images/scopeDimming.png" alt="Figure A"/>
+<br><img src="images/scopeDimming.png" alt="Figure A"/>
 
 
 ## Summary
-This project showcases how the Core Independent Peripherals (CIPs) on the new PIC18-Q43 can be used to create an automatic fixed frequency with variable duty-cycle PWM signal. 
+This project showcases how the Core Independent Peripherals (CIPs) on the new PIC18-Q10 can be used to create an automatic fixed frequency with variable duty-cycle PWM signal. 
 This example shows an initialization of the CLC in the SR Latch mode that enables this implementation. The function is called automatic as it does not require
 code or core supervision to work, the hardware is set at start-up and can be reconfigured during run-time.
