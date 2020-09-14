@@ -5,7 +5,7 @@
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-clc-latch-bare",
         "version": "1.0.4",
-        "displayName": "Getting started with the CLC on PIC18 -> Using the CLC to Create an LED Dimming Effect",
+        "displayName": "Using the CLC to Create an LED Dimming Effect",
         "projectName": "pic18f47q10-cnano-clc-latch-bare",
         "shortDescription": "This example shows an initialization of the CLC in the SR Latch mode that enables the implementation of an automatic fixed frequency with variable duty-cycle PWM signal.",
         "ide": {
@@ -41,16 +41,10 @@
             "Peripherals",
             [
                "Peripherals", "CLC"
-            ],
-            [
-               "Peripherals", "TIMER", "TMR2"
-            ],
-            [
-               "Peripherals", "PPS"
-            ]            			
+            ]           			
         ],
         "peripherals": [
-            "CLC", "TIMER", "TMR2", "PPS"
+            "CLC"
         ],
         "keywords": [
             "Logic Function",
