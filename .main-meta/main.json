@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-clc-latch-bare",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "displayName": "Using the CLC to Create an LED Dimming Effect",
         "projectName": "pic18f47q10-cnano-clc-latch-bare",
         "shortDescription": "This example shows an initialization of the CLC in the SR Latch mode that enables the implementation of an automatic fixed frequency with variable duty-cycle PWM signal.",
